@@ -58,11 +58,15 @@ public class SnakeAndLadder {
             if (position > 100) {
                 position = position -roll;
             }
-            else {
+            else if (position==100){
                 System.out.println("player 1 got number in dice is " + roll);
                 System.out.println("Player 1 cant move forward");
                 System.out.println("player 1 position = " + position);
+                break;
             }
+
         }
+        System.out.println("For reach the position 100 we have to roll the dice " +  noOfTimeDiceRoll + " time .");
+
     }
 }
