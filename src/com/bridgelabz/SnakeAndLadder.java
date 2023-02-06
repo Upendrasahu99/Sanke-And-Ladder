@@ -9,5 +9,7 @@ public class SnakeAndLadder {
         int playerCount=1;
         int playerNumber=1;
         System.out.println("Welcome Player " + playerNumber);
+        Random random = new Random();
+        int roll = random.nextInt(6)+1; //For roll the die
     }
 }
